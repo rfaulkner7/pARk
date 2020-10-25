@@ -1,0 +1,4 @@
+runtime: python37
+entrypoint: gunicorn -t 86400 -w 4 -k uvicorn.workers.UvicornWorker main:app
+
+instance_class: F1
